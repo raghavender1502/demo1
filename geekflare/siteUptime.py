@@ -25,7 +25,7 @@ def siteUptime(domain):
         payload = {
             "domain": domain,
             "response": response.json(),
-            "extSource": "Geekflare API"
+            "extSource": "GeekflareAPI"
         }
     except:
         payload = {
