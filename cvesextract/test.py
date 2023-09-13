@@ -22,4 +22,4 @@ def search_cves(domain):
         print(f"An error occurred: {e}")
 
 # Example usage
-search_cves("tamu.edu")
+search_cves("google.com")
