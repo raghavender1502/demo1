@@ -2,7 +2,7 @@ import json
 import requests
 import os
 import re
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 # get the keys
 # load_dotenv()
 geekflareKey = "c02ba9ce-506f-438e-90a8-dd299515e28b"
