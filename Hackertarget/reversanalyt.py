@@ -2,7 +2,7 @@ import requests
 
 def analyticslookup(domain):
     res = requests.get('https://api.hackertarget.com/analyticslookup/?q=' + domain)
-    response1 = res.text.splitlines()
+    response = res.text.splitlines()
 
     # domains = []
     # user_agents = []
@@ -14,11 +14,11 @@ def analyticslookup(domain):
 
     payload = {
         "Domain": domain,
-        "results": response1
+        "results": response
         # "DomainsList": domains,
         # "UserAgentsList": user_agents
     }
     return payload
 
 # Example usage:
-print(analyticslookup('elch.org'))
+print(analyticslookup('tamu.edu'))
