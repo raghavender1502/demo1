@@ -2,9 +2,9 @@ import json
 import requests
 import os
 import re
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 # get the keys
-# load_dotenv()
+load_dotenv()
 geekflareKey = "c02ba9ce-506f-438e-90a8-dd299515e28b"
 def siteUptime(domain):
     url = "https://api.geekflare.com/up"
@@ -25,7 +25,7 @@ def siteUptime(domain):
         payload = {
             "domain": domain,
             "response": response.json(),
-            "extSource": "GeekflareAPI"
+            "extSource": "Geekflare API"
         }
     except:
         payload = {
